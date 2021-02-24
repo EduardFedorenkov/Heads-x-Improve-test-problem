@@ -17,6 +17,7 @@ template<typename T, typename Distr, typename RandGen>
 vector<T> VectorRandomFilling(size_t n, Distr& distribution, RandGen& random_gen, bool IsUniq){
 
 	vector<T> result;
+	result.reserve(n);
 	if(IsUniq){       // Unique filling of the vector
 		set<T> uniq_set;
 
